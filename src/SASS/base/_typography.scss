@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=League+Gothic&family=Smooch+Sans:wght@400;500&display=swap");
 @import "../utils/variables.scss";
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $font-lato;
+}
+
+a {
+  font-family: $font-league;
 }

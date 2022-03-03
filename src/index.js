@@ -5,13 +5,16 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
     <div className="app">
-      <Navbar />
-      <App />
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <App />
+        <Footer />
+      </BrowserRouter>
     </div>
   </React.StrictMode>,
   document.getElementById("root")
