@@ -4,7 +4,6 @@ import "./SASS/index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
@@ -13,7 +12,6 @@ ReactDOM.render(
       <BrowserRouter>
         <Navbar />
         <App />
-        <Footer />
       </BrowserRouter>
     </div>
   </React.StrictMode>,

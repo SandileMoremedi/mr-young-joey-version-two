@@ -1,8 +1,8 @@
 @import "./base/reset";
 @import "./base/typography";
-
-@import "./layout/home";
-
 @import "./components/navbar";
+@import "./layout/contact";
+@import "./layout/home";
+@import "./layout/about";
 
 @import "./utils/variables.scss";

@@ -1,0 +1,87 @@
+.about h1 {
+  text-align: center;
+  font-size: 7rem;
+}
+.img-div {
+  position: relative;
+  float: right;
+}
+.img-div .image {
+  margin: 30px;
+  position: relative;
+  max-width: 300px;
+  max-height: 400px;
+  display: flex;
+  flex-shrink: 1;
+}
+
+.img-div::before {
+  content: "";
+  background-color: white;
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 400px;
+  float: right;
+  top: -20px;
+}
+
+.img-div {
+  position: relative;
+  float: right;
+  margin: 10px;
+  margin-left: 10px;
+}
+p {
+  line-height: 1.5;
+  margin: 30px;
+  font-size: 30px;
+}
+.img-section {
+  position: relative;
+  width: 400px;
+  margin-right: 0;
+  float: left;
+  z-index: 11;
+
+  .img-two::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    z-index: -10;
+    margin-left: 10px;
+    margin-right: 0;
+  }
+}
+.image-two {
+  width: 300px;
+  height: 400px;
+  margin: 40px;
+  margin-right: 0;
+  margin-top: 70px;
+  z-index: 12;
+}
+@media screen and (max-width: 650px) {
+  h1 {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+  body {
+    overflow-x: hidden;
+  }
+
+  .img-section {
+    float: none;
+  }
+  .img-div {
+    float: none;
+  }
+  .image-two {
+    float: none;
+  }
+}
